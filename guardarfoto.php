@@ -1,5 +1,4 @@
-<?
-
+<?php
     define('UPLOAD_DIR', '/images/');
     $img = $_POST['imgBase64'];
     $img = str_replace('data:image/png;base64,', '', $img);
@@ -10,6 +9,4 @@
     //send request to ocr 
 
     print $success ? $file : 'Unable to save the file.';
-
-
 ?>
